@@ -1,5 +1,8 @@
 document.getElementById("generate-song").addEventListener("click", function() {
+    const title = document.getElementById("song-title").value;
     const lyrics = document.getElementById("lyrics").value;
+    const styles = document.getElementById("styles").value;
+    const stylesAvoid = document.getElementById("styles-avoid").value;
 
     if (lyrics.trim() === "") {
         alert("Please enter some lyrics.");
@@ -15,6 +18,11 @@ document.getElementById("generate-song").addEventListener("click", function() {
         // Hide loading state
         document.getElementById("loading").style.display = "none";
         
+        // Display the song title in the console (just for demonstration)
+        console.log(`Song Title: ${title}`);
+        console.log(`Styles: ${styles}`);
+        console.log(`Styles to Avoid: ${stylesAvoid}`);
+
         // Simulate generated song URL (you can replace this with your actual song URL)
         const songUrl = "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3";
         
