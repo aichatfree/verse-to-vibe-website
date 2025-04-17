@@ -13,34 +13,20 @@
             <h1 class="title">VerseToVibe</h1>
             <p class="subtitle">Turn your lyrics into a song.</p>
 
-            <!-- Song Title input (Now below the subtitle) -->
             <input type="text" id="song-title" placeholder="Enter song title" class="input-field">
-
-            <!-- Lyrics input -->
             <textarea id="lyrics" placeholder="Enter your lyrics here..." rows="6" class="input-field"></textarea>
-
-            <!-- Styles input -->
             <textarea id="styles" placeholder="Enter song styles (e.g., pop, rock, etc.)" rows="4" class="input-field"></textarea>
-
-            <!-- Styles to avoid input -->
             <textarea id="styles-avoid" placeholder="Enter song styles to avoid (optional)" rows="4" class="input-field"></textarea>
-
-            <!-- Style dropdown to select singing or rapping -->
-            <select id="vocal-style" class="input-field">
-                <option value="singing">Singing</option>
-                <option value="rapping">Rapping</option>
-            </select>
-
-            <!-- Generate song button -->
             <button id="generate-song">Generate Song</button>
 
-            <!-- Feedback message (hidden initially) -->
             <div id="loading" class="loading" style="display:none;">
                 <span>Loading...</span>
             </div>
 
-            <!-- Audio player (initially hidden) -->
             <audio id="audio-player" controls style="display:none;"></audio>
+            <audio id="background-music" loop style="display:none;">
+                <source src="your-background-music.mp3" type="audio/mp3">
+            </audio>
         </div>
     </div>
 
