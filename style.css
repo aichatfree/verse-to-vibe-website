@@ -40,7 +40,8 @@ body {
     color: #ccc;
 }
 
-.input-field {
+/* Unified styling for all input fields */
+.input-field, input[type="text"], textarea {
     width: 100%;
     padding: 15px;
     margin-bottom: 20px;
@@ -52,6 +53,12 @@ body {
     resize: none;
 }
 
+/* Specifically targeting the input[type="text"] (Song Title) */
+input[type="text"] {
+    height: 50px;
+}
+
+/* Button styling */
 button {
     padding: 15px 30px;
     font-size: 1.2rem;
