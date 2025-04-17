@@ -13,8 +13,19 @@
             <h1 class="title">VerseToVibe</h1>
             <p class="subtitle">Turn your lyrics into a song.</p>
 
-            <!-- Lyrics input form -->
-            <textarea id="lyrics" placeholder="Enter your lyrics here..." rows="6"></textarea>
+            <!-- Title input -->
+            <input type="text" id="song-title" placeholder="Enter song title" class="input-field">
+
+            <!-- Lyrics input -->
+            <textarea id="lyrics" placeholder="Enter your lyrics here..." rows="6" class="input-field"></textarea>
+
+            <!-- Styles input -->
+            <textarea id="styles" placeholder="Enter song styles (e.g., pop, rock, etc.)" rows="4" class="input-field"></textarea>
+
+            <!-- Styles to avoid input -->
+            <textarea id="styles-avoid" placeholder="Enter song styles to avoid (optional)" rows="4" class="input-field"></textarea>
+
+            <!-- Generate song button -->
             <button id="generate-song">Generate Song</button>
 
             <!-- Feedback message (hidden initially) -->
