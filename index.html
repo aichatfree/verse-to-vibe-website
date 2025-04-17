@@ -17,16 +17,25 @@
             <textarea id="lyrics" placeholder="Enter your lyrics here..." rows="6" class="input-field"></textarea>
             <textarea id="styles" placeholder="Enter song styles (e.g., pop, rock, etc.)" rows="4" class="input-field"></textarea>
             <textarea id="styles-avoid" placeholder="Enter song styles to avoid (optional)" rows="4" class="input-field"></textarea>
+
+            <select id="vocal-style" class="input-field">
+                <option value="singing">Singing</option>
+                <option value="rapping">Rapping</option>
+            </select>
+
             <button id="generate-song">Generate Song</button>
 
             <div id="loading" class="loading" style="display:none;">
                 <span>Loading...</span>
             </div>
 
-            <audio id="audio-player" controls style="display:none;"></audio>
+            <!-- Audio player for background music -->
             <audio id="background-music" loop style="display:none;">
                 <source src="your-background-music.mp3" type="audio/mp3">
             </audio>
+
+            <!-- Audio player for the generated vocals -->
+            <audio id="audio-player" controls style="display:none;"></audio>
         </div>
     </div>
 
